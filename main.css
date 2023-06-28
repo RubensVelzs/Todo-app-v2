@@ -1,0 +1,168 @@
+*{
+   margin:0;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    background-color:rgba(86, 86, 86    );
+    position: sticky;
+    top:0;
+}
+
+.header__title--items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.header__title--items a{
+    color:white;
+    text-decoration: none;
+}
+
+.section__create{
+   padding:2rem;
+   position: relative;
+  
+}
+
+.section__create--button{
+    background-color: green;
+    border: 1px green solid;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    padding: 8px;
+    position: fixed;
+    right: 4rem;
+    width: 88px;
+}
+
+.section__create--items{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__posts--container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.section__posts--item{
+    border: 1px white solid;
+    border-radius: 5px;
+    background-color: rgba(86, 86, 86, 0.8) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.section__posts--item img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 250px;
+    margin-bottom: 8px;
+}
+
+.section__posts--item-content{ 
+    align-items: center;  
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.section__posts--item-content a{
+    color: transparent;
+    cursor:pointer;
+}
+
+.div__modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.div__modal--content {
+    background-color: rgba(86, 86, 86) ;
+    border: 1px solid #888;
+    border-radius: 8px;
+    height: 500px;
+    margin: auto;
+    padding: 2rem;
+    width: 500px;
+  }
+
+.div__modal--content h2{
+    color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.form__modal--content{
+    display: flex;
+    flex-direction: column;
+    height:450px;
+    justify-content: space-between;
+}
+
+.form__modal--elements{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form__modal--elements textarea{
+    height: 80px;
+    border-radius: 8px;
+}
+
+.form__modal--button{
+    border-radius: 8px;
+    cursor:pointer;
+    padding:8px;
+
+
+}.form__modal--button p{
+    font-weight: bold;
+}
+
+.div__select{
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    content:"Select a file";
+    cursor: pointer;
+    display: flex;
+    font-size: small;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 4px;
+    width: 200px;
+}
+
+.div__select label{
+    cursor:pointer;
+}
+
+.div__select input{
+    display:none;
+}
